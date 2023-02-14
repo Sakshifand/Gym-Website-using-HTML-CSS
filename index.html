@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        color: white;
+    }
+    .left img{
+        width:70px;
+        /*Invert = used to convert black image to white*/
+        filter: invert(100%); 
+    }
+    .left div{
+        text-align: center;
+        font-size: 15px;
+        line-height: 0px;
+    }
+    .mid{
+        display: block;
+        width: 55%;
+        margin: 25px auto;
+        color: white;
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        color: white;
+        margin: 8px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 24px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: rgb(152, 148, 148)
+    }
+    .btn{
+        margin: 10px;
+        padding: 5px;
+        background-color: rgb(5, 5, 5);
+        color: white;
+        padding: 4px 13px;
+        border: 2px solid grey;
+        border-radius: 3px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(57, 55, 55);
+    }
+    .container{
+        display: block;
+        width: 50%;
+        margin: 200px auto;
+        color: white;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        font-size: 15px;
+        border: 2px solid black;
+        margin: 8px auto;
+        padding: 6px;
+        width: 45%;
+        border-radius: 8px;
+    }
+    .container button{
+        width: 30%;
+        border-radius: 8px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+        <img src="gym.png">
+        <div>Gym Fitness</div>
+        </div>
+        <!--Mid box for navigation-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+           <button class="btn">Call us now</button>
+           <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" Age="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" gender="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" Locality="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
